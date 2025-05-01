@@ -1,0 +1,101 @@
+/* --- General --- */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f9fafe;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: fadeIn 1s ease-in;
+    /* Aplicar animación de entrada */
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.navbar {
+    background-color: #ffffff;
+    /* Fondo blanco */
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #00aaff !important;
+}
+
+.navbar-nav .nav-link {
+    color: #0077cc !important;
+    margin-right: 1rem;
+    font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    text-decoration: underline;
+    color: #005999 !important;
+}
+
+
+.container {
+    flex: 1;
+}
+
+img {
+    width: 50%;
+}
+
+
+form input,
+form select,
+form textarea {
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    box-shadow: 0 0 5px rgba(0, 170, 255, 0.5);
+}
+
+
+button,
+a.btn {
+    background-color: #00aaff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    color: white;
+}
+
+button:hover,
+a.btn:hover {
+    background-color: #008ecc;
+    transform: scale(1.05);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: #004d66;
+}
+
+footer {
+    background-color: #004d66;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: auto;
+}
